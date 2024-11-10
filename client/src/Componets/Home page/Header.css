@@ -1,3 +1,14 @@
+:root {
+    --radius-1: 70%;
+    --radius-2: 30%;
+    --radius-3: 30%;
+    --radius-4: 70%;
+    --radius-5: 60%;
+    --radius-6: 40%;
+    --radius-7: 60%;
+    --radius-8: 40%;
+}
+
 body {
     background: var(--primary-color);
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(143, 21, 21) 100%);
@@ -6,7 +17,7 @@ body {
 }
 
 .header-container {
-    height: 80vh;
+    height: 90vh;
 }
 
 .header-wrapper {
@@ -102,7 +113,7 @@ body {
     content: '';
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 2px;
     background-color: var(--font-color-2);
     bottom: 0;
     left: 0;
@@ -163,38 +174,182 @@ body {
     overflow: hidden;
     background: var(--secondary-color);
     color: ghostwhite;
-   }
+}
    
-   .nav_btn span {
+.nav_btn span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
-   }
+}
    
-   .nav_btn:hover span {
+.nav_btn:hover span {
     color: var(--font-color-1);
-   }
+}
    
-   .nav_btn::before,
-   .nav_btn::after {
+.nav_btn::before,
+.nav_btn::after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-   }
+}
    
-   .nav_btn::before {
+.nav_btn::before {
     content: "";
     background: var(--bg-color-1);
     width: 120%;
     left: -10%;
     transform: skew(30deg);
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-   }
+}
    
-   .nav_btn:hover::before {
+.nav_btn:hover::before {
     transform: translate3d(100%, 0, 0);
-   }
-   
+}
+
+/* ================================================================================= */
+.header_content {
+    padding: 20px;
+}
+
+.content {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px;
+    height: 80vh;
+
+}
+
+/* Content Left */
+.content_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+
+.empty {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(8px);
+}
+
+.empty:nth-child(1) { top: -60%; left: -90px; }
+.empty:nth-child(2) { top: 60%; left: 400px; }
+.empty:nth-child(3) { top: -80%; left: 20px; }
+.empty:nth-child(4) { top: 80%; left: 80px; }
+.empty:nth-child(5) { top: 40%; left: -60px; }
+
+.header_text {
+    z-index: 1;
+    text-align: left;
+}
+
+.header_title {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--font-color-1);
+}
+
+.header_text p {
+    font-size: 1rem;
+    color: var(--font-color-1);
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.content_button {
+    margin-top: 25px;
+}
+.content_btn {
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 13px;
+    gap: 9px;
+    font-size: 1rem;
+    color: var(--font-color-2);
+    background: var(--bg-color-1);
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+    font-weight: 600;
+}
+  
+.arrow {
+    position: absolute;
+    right: 7.5px;
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+  
+.content_btn:hover .arrow {
+    width: calc(180px - (7.5px)*2);
+}
+  
+
+/* Content Right */
+.content_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 80%;
+}
+
+.img_right-1, .img_right-2 {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img_right-1 {
+    z-index: 3; /* Place on top */
+    left: 16%; /* Center horizontally */
+    top: -5%; /* Adjust for layering */
+}
+
+.img_right-2 {
+    z-index: 1; /* Place behind img_right-1 */
+    right: 30%; /* Center horizontally */
+    top: 25%; /* Adjust for layering */
+}
+
+.empty_left {
+    position: absolute;
+    width: 220px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    filter: blur(2px);
+    top: 40%;
+    left: 42%;
+    border-radius: 0px 20px 20px 20px;
+    transform: translate(-50%, -50%); /* Center the blob */
+    z-index: 2; /* Place behind images */
+}

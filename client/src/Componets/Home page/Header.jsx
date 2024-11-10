@@ -54,21 +54,34 @@ function Header() {
         </div>
 
         <div className="header_content">
-            <div className="content_left">
-                <div className="empty"></div>
-                <div className="empty"></div>
-                <div className="empty"></div>
-                <div className="empty"></div>
-                <div className="empty"></div>
+            <div className="content">
+                <div className="content_left">
+                    <div className="empty"></div>
+                    <div className="empty"></div>
+                    <div className="empty"></div>
+                    <div className="empty"></div>
+                    <div className="empty"></div>
 
-                <h1 className="header_title">Make an order of your favorite food</h1>
-                <p>Save time by ordering your favorite food from anywhere around campus</p>
-            </div>
+                    <div className="header_text">
+                        <h1 className="header_title">Make an order of your <br /> favorite food</h1>
+                        <p>Save time by ordering your favorite food from anywhere around campus</p>
+                    </div>
 
-            <div className="content_right">
-                <img src="" alt="" />
-                <div className="empty_left"></div>
-                <img src="" alt="" />
+                    <div className="content_button">
+                        <button class="content_btn">
+                            Order Now
+                            <span class="arrow">
+                                <svg fill="rgb(183, 128, 255)" viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div className="content_right">
+                    <img src="/images/Best Chicken Biryani Recipe _ You Need to Try.jpeg" alt="" className='img_right-1'/>
+                    <div className="empty_left"></div>
+                    <img src="/images/French fries _ potatoe fries _ sauce _ fries.jpeg" alt="" className='img_right-2'/>
+                </div>
             </div>
         </div>
     </div>
