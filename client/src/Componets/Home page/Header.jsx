@@ -31,8 +31,8 @@ function Header() {
 
         <div className="header_navbar">
             <div className="logo">
-                <img src="" alt="" />
-                <h1>Speedy <span className='logo_span'>serv</span></h1>
+                <img src="././././" alt="" />
+                <h1>Speedy<span className='logo_span'>serv</span></h1>
             </div>
 
             <div className="nav_links">
