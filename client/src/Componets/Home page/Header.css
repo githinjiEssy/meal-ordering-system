@@ -1,0 +1,38 @@
+body {
+    background: var(--primary-color);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(143, 21, 21) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.header-container {
+    height: 80vh;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+}
+
+.delivery, .location, .header_socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 100;
+    color: var(--font-color-1);
+    font-size: 1rem;
+}
+
+.header_top-icon {
+    font-size: 1.6rem;
+    color: var(--bg-color-1);
+}
+

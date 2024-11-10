@@ -9,7 +9,7 @@
   --bg-color-4: #FFFFFF;
 
   --font-color-1: #FFFFFF;
-  --font-color-1: #000000;
+  --font-color-2: #000000;
 
   --font-light: 300;
   --font-regular: 500;
@@ -20,6 +20,8 @@
 body {
   margin: 0;
   padding: 0;
+  left: 0;
+  right: 0;
   font-family: "Inria Serif", serif;
 }
 
