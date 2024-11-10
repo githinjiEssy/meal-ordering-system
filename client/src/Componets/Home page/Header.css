@@ -32,17 +32,169 @@ body {
 }
 
 .header_top-icon {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: var(--bg-color-1);
 }
 
 .header_navbar {
-    background: grey;
+    background: var(--bg-color-3);
     width: 80%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    border-radius: 0 60px 60px 0px;
 }
 
 .nav_logo {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 0px 60px 60px  0px;
 }
+
+.nav_logo .logo_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.nav_logo h1 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+    color: var(--font-color-1);
+}
+
+.nav_logo h1 .logo-text {
+    color: var(--bg-color-1);
+}
+
+.nav_right {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    /* background: greenyellow; */
+}
+
+.header_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    height: 50%;
+}
+
+.header_links li a {
+    color: var(--font-color-2);
+    font-size: 1.2rem;
+    font-weight: var(--font-bold);
+    text-decoration: none;
+    position: relative;
+}
+
+.header_links li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--font-color-2);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.header_links li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.nav_buttons {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    height: 50%;
+}
+
+.nav_icon {
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    padding: 5px;
+    border-radius: 30px;
+}
+
+/* .nav_btn {
+    padding: 5px;
+    width: 40%;
+    height: 100%;
+    border-radius: 30px;
+    border: solid 1.3px;
+    background: var(--bg-color-1);
+    font-size: 1.2rem;
+} */
+
+/* From Uiverse.io by BHARGAVPATEL1244 */ 
+
+.nav_btn {
+    width: 40%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: var(--secondary-color);
+    color: ghostwhite;
+   }
+   
+   .nav_btn span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   .nav_btn:hover span {
+    color: var(--font-color-1);
+   }
+   
+   .nav_btn::before,
+   .nav_btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .nav_btn::before {
+    content: "";
+    background: var(--bg-color-1);
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .nav_btn:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   

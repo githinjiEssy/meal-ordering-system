@@ -31,23 +31,25 @@ function Header() {
 
         <div className="header_navbar">
             <div className="nav_logo">
-                <img src="/images/logo.png" alt="" />
+                <img src="/images/logo.png" alt="" className='logo_img'/>
                 <h1><span className='logo-text'>Speedy</span>serv</h1>
             </div>
 
-            <div className="nav_links">
-                <ul className="header_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+            <div className="nav_right">
+                    <ul className="header_links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
 
-            <div className="nav_buttons">
-                <div className="cart_icon">
-                    <TiShoppingCart />
+                <div className="nav_buttons">
+                    <div className="cart_icon">
+                        <TiShoppingCart className='nav_icon'/>
+                    </div>
+                    <button className='nav_btn'>
+                        <span>SignIn</span>
+                    </button>
                 </div>
-                <button>SignIn</button>
             </div>
         </div>
 
