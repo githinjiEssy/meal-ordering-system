@@ -40,4 +40,9 @@ body {
     background: grey;
     width: 80%;
     display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    display: flex;
 }
