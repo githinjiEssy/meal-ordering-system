@@ -9,15 +9,12 @@
     --radius-8: 40%;
 }
 
-body {
+.header-container {
+    height: 90vh;
     background: var(--primary-color);
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(143, 21, 21) 100%);
     background-size: cover;
-    background-repeat: no-repeat;   
-}
-
-.header-container {
-    height: 90vh;
+    background-repeat: no-repeat; 
 }
 
 .header-wrapper {
