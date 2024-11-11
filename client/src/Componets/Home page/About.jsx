@@ -1,6 +1,5 @@
 import React from 'react';
 import "./About.css";
-import { FaStar } from "react-icons/fa";
 import { TbStarsFilled } from "react-icons/tb";
 import { MdDeliveryDining } from "react-icons/md";
 import { SiCodefresh } from "react-icons/si";
