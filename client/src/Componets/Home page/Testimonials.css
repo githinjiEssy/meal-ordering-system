@@ -1,43 +1,94 @@
 .testimonials__container {
-    background: goldenrod;
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .testimonial__wrapper {
     width: 80%;
-    background: gray;
 }
 
-.testimonial-heading {
-    background: blue;
+.testimonial__heading {
+    padding: 10px;
 }
 
-.slider__container {
-    background: rebeccapurple;
+.testimonial__title {
+    font-size: 4rem;
+    font-weight: var(--font-bold);
+    font-style: italic;
+}
+
+.testimonial__subtitle {
+    font-size: 1rem;
+}
+
+.testionial_content {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.testimonial__card {
+    width: 430px;
+    height: 250px;
+    padding: 1rem;
+    text-align: left;
+    align-content: center;
+}
+
+.card__top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+}
+
+.testiomnial__card-img {
+    background: rgb(31, 2, 2);
+    height: 100%;
+    width: 50px;
+    border-radius: 30px;
+}
+
+.testimonial__card-title {
+    font-size: 1.3rem;
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+
+.testimonial__card-description {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.card__bottom {
+    display: flex;
+    padding: 10px;
+}
+
+.pref {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.testimonial__icon {
+    font-size: 2rem;
 }
 
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
   
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-  
+    background: var(--bg-color-2);
+    border-radius: 20px;
+
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-  
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-  

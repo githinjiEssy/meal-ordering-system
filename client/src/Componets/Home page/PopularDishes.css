@@ -10,7 +10,7 @@
 }
 
 .popilar__dishes-heading {
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .popular__dishes-title {
@@ -20,7 +20,7 @@
 }
 
 .popular__dishes-subtitle {
-    margin-top: -20px;
+    padding: 5px;
 }
 
 .dishes__container {
@@ -60,6 +60,11 @@
 .card__title,
 .card__price {
     color: var(--primary-color);
+    font-weight: var(--font-bold);
+}
+
+.card__rate {
+    font-size: 1.2rem;
 }
 
 .card__ratings {
@@ -68,9 +73,14 @@
     align-items: center;
 }
 
+.card__title {
+    font-size: 2rem;
+    padding: 5px;
+}
+
 .card__description {
     margin-top: 0.5rem;
-    color: #6B7280;
+    color: var(--font-color-2);
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
@@ -78,17 +88,17 @@
 .card__bottom {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
 }
 
 .card__price {
-    font-weight: bold;
     font-size: 1.4rem;
 }
 
 .card__btn {
     padding: 0.5rem 1rem;
-    background-color: #ff6600;
+    background: var(--bg-color-1);
     color: #fff;
     border: none;
     border-radius: 0.25rem;
