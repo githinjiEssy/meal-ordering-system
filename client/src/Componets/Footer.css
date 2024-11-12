@@ -1,0 +1,22 @@
+.footer__container {
+    background: rgb(3, 3, 129);
+    display: flex;
+    justify-content: center;
+}
+
+.footer__wrapper {
+    width: 80%;
+    padding: 20px;
+    background: rosybrown;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    background: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
