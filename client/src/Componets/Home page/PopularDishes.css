@@ -2,7 +2,6 @@
     padding: 2rem;
     display: flex;
     justify-content: center;
-    background-color: #ff6600;
 }
 
 .popular__dishes-wrapper {
@@ -99,6 +98,7 @@
 
 .card__btn {
     padding: 0.5rem 1rem;
+    background: var(--bg-color-1);
     color: #fff;
     border: none;
     border-radius: 0.25rem;

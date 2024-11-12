@@ -26,6 +26,7 @@
     display: flex;
     gap: 30px;
     padding-top: 20px;
+    margin-bottom: 30px;
 }
 
 .testimonial__card {
