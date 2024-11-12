@@ -19,9 +19,9 @@ function About() {
           </div>
 
           <div className="about__right">
-          <div className="about__subtitle">Why Us?</div>
+            <div className="about__subtitle">Why Us?</div>
 
-          <div className="about__text">
+            <div className="about__text">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam labore neque esse autem error similique dolore quidem praesentium sequi, quibusdam officiis tenetur repudiandae nisi rem odio, a, aspernatur laudantium. Rem at consequuntur ullam blanditiis nemo sit? Sit officia ad dolorem.</p>
 
             <div className="about__icons">
