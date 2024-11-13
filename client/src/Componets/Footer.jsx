@@ -9,12 +9,12 @@ function Footer() {
         <div className="footer__content">
           <div className="footer__left">
             <h1 className="web__name">SpeedyServ</h1>
-            <p className="web__slogan">Serving Speed and Flavor, One Order at a Time.</p>
+            <p className="web__slogan">Serving Speed and Flavor, One <br /> Order at a Time.</p>
 
             <div className="footer__socials">
-              <FaSquareXTwitter />
-              <FaSquareInstagram />
-              <FaSquareFacebook />
+              <FaSquareXTwitter footer__icon/>
+              <FaSquareInstagram footer__icon/>
+              <FaSquareFacebook footer__icon/>
             </div>
           </div>
 

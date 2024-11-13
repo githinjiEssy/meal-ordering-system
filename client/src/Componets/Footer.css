@@ -20,3 +20,22 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
+.web__name {
+    font-size: 3rem;
+    font-weight: var(--font-bold);
+}
+
+.footer__socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__icon {
+    font-size: 1.5rem;
+}
+
+.link__list {
+    display: flex;
+    gap: 20px;
+}

@@ -38,7 +38,7 @@ function Header() {
             <div className="nav_right">
                     <ul className="header_links">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="../Menue/meal.jsx">Menu</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
 

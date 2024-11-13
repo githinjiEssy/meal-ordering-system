@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar.jsx'
 import Footer from '../Footer.jsx'
 
-function Meals() {
+function Menu() {
     const cards = [
         {
             image: "",
@@ -71,27 +71,27 @@ function Meals() {
     ]
 
   return (
-    <div className="meals__container">
-        <div className="meal__card-wrapper">
+    <div className="menu__container">
+        <div className="menu__card-wrapper">
 
             <Navbar/>
 
             <div className="food__categories">
                 <ul className='category__list'>
-                    <li>
-                        <a href="" className="category" type="button">Snack</a>
+                    <li className='category'>
+                        <a href="#" className="category" type="button">Snack</a>
                     </li>
-                    <li>
-                        <a href="" className="category" type="button">Snack</a>
+                    <li className='category'>
+                        <a href="#" className="category" type="button">Breakfast</a>
                     </li>
-                    <li>
-                        <a href="" className="category" type="button">Snack</a>
+                    <li className='category'>
+                        <a href="#" className="category" type="button">Lunch</a>
                     </li>
-                    <li>
-                        <a href="" className="category" type="button">Snack</a>
+                    <li className='category'>
+                        <a href="#" className="category" type="button">Dinner</a>
                     </li>
-                    <li>
-                        <a href="" className="category" type="button">Snack</a>
+                    <li className='category'>
+                        <a href="#" className="category" type="button">Drinks</a>
                     </li>
                 </ul>
             </div>
@@ -128,4 +128,4 @@ function Meals() {
   )
 }
 
-export default Meals
+export default Menu
